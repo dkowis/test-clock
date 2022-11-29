@@ -1,5 +1,5 @@
 plugins {
-  id("test-clock-conventions")
+  id("test-clock.java-conventions")
 }
 
 dependencies {

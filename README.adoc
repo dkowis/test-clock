@@ -1,3 +1,5 @@
+image::https://github.com/dkowis/test-clock/actions/workflows/java-ci.yml/badge.svg[Build Workflow]
+
 [quote,Ford Prefect]
 Time is an illusion. Lunchtime doubly so.
 
@@ -114,3 +116,8 @@ Given a message is pushed to the queue
  When I ask the queue for messages
  Then I get the same message back again
 ----
+
+== Authors
+
+- Originally by Rob Fletcher at https://github.com/robfletcher/test-clock
+- Updated 2022 by David Kowis at https://github.com/dkowis/test-clock

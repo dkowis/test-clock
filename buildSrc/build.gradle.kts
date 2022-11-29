@@ -1,5 +1,4 @@
-
-plugins {
+plugins{
     `kotlin-dsl`
 }
 
