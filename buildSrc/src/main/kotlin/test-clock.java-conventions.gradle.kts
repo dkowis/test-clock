@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "is.kow.time"
+group = "is.kow.test-clock"
 version = "1.0.1"
 
 repositories {
