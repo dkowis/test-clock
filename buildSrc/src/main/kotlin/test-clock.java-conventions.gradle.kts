@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    id("maven-publish")
 }
 
 group = "is.kow.time"
@@ -28,4 +29,17 @@ val junit5Version: String by project
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5Version")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5Version")
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://mvn.pkg.github.com/dkowis/test-clock")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
