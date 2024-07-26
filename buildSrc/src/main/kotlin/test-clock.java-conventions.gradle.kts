@@ -35,7 +35,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://mvn.pkg.github.com/dkowis/test-clock")
+            url = uri("https://maven.pkg.github.com/dkowis/test-clock")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
